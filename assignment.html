@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+        <form action="">
+            <!-- <div class="container"> -->
+            <label for="">Enter Your First Number:</label>
+            <br>
+            <input type="number" name="num1" id="num1">
+            <br>
+            <label for="">Enter Your Second Number:</label>
+            <br>
+            <input type="number" name="num2" id="num2">
+            <br>
+            <br>
+            <input type="button" onclick="add()" value="Addition" class="button">
+            <input type="button" onclick="sub()" value="Subtraction" class="button">
+            <input type="button" onclick="mul()" value="Multiplication" class="button">
+            <input type="button" onclick="div()" value="Division" class="button">
+            <!-- </div> -->
+        </form>
+    </div>
+    <!-- Optional JavaScript -->
+    <script>
+        const add = () => {
+            let num1 = document.getElementById("num1").value;
+            let num2 = document.getElementById("num2").value;
+            let add = parseInt(num1) + parseInt(num2);
+            // if (num1 == "") {
+            //   alert("Please Enter First Number for Additon !");
+            // } else if (num2 == "") {
+            //   alert("Please Enter Second Number for Additon !");
+            // } else {
+            //   alert("Addition of numbers is = " + add);
+            // }
+            if (num1 == "") {
+                let num1 = prompt("Enter Your First Number");
+                let num2 = prompt("Enter Your Second Number");
+
+                let add = parseInt(num1) + parseInt(num2);
+                document.write("Addition of numbers is = " + add + "<br><br>");
+            } else {
+                alert("Addition of numbers is = " + add);
+            }
+        }
+        const sub = () => {
+            let num1 = document.getElementById("num1").value;
+            let num2 = document.getElementById("num2").value;
+            let sub = num1 - num2;
+            // if (num1 == "") {
+            //   alert("Please Enter First Number for Subtraction !");
+            // } else if (num2 == "") {
+            //   alert("Please Enter Second Number for Subtraction !");
+            // } else {
+            // }
+            if (num1 == "") {
+                let num1 = prompt("Enter Your First Number");
+                let num2 = prompt("Enter Your Second Number");
+
+                let sub = num1 - num2;
+                document.write("Subtraction of numbers is = " + sub + "<br><br>");
+            } else {
+                alert("Subtraction of numbers is = " + sub);
+                // alert("Addition of numbers is = " + add);
+            }
+        }
+        const mul = () => {
+            let num1 = document.getElementById("num1").value;
+            let num2 = document.getElementById("num2").value;
+            let mul = num1 * num2;
+            // if (num1 == "") {
+            //   alert("Please Enter First Number for Multiplication !");
+            // } else if (num2 == "") {
+            //   alert("Please Enter Second Number for Multiplication !");
+            // } else {
+            // }
+            if (num1 == "") {
+                let num1 = prompt("Enter Your First Number");
+                let num2 = prompt("Enter Your Second Number");
+
+                let mul = num1 * num2;
+                document.write("Multiplication of numbers is = " + mul + "<br><br>");
+            } else {
+                alert("Multiplication of numbers is = " + mul);
+                // alert("Addition of numbers is = " + add);
+            }
+        }
+        const div = () => {
+            let num1 = document.getElementById("num1").value;
+            let num2 = document.getElementById("num2").value;
+            let div = num1 / num2;
+            // if (num1 == "") {
+            //   alert("Please Enter First Number for Division !");
+            // } else if (num2 == "") {
+            //   alert("Please Enter Second Number for Division !");
+            // } else {
+            // }
+            if (num1 == "") {
+                let num1 = prompt("Enter Your First Number");
+                let num2 = prompt("Enter Your Second Number");
+
+                let div = num1 / num2;
+                document.write("Division of numbers is = " + div + "<br><br>");
+            } else {
+                alert("Division of numbers is = " + div);
+                // alert("Addition of numbers is = " + add);
+            }
+        }
+    </script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+
+</html>

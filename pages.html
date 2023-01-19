@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Feedback Form</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Bootstrap CSS -->
+    <style>
+        .button {
+            border: black 2px solid;
+            /* outline: none; */
+            padding-left: 3%;
+            padding-right: 3%;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            border-radius: 8px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Nav tabs -->
+    <ul class="nav nav-tabs" id="navId">
+        <li class="nav-item">
+            <a href="#Home" onclick="home()" class="nav-link active">Home</a>
+        </li>
+        <li class="nav-item">
+            <a href="#AboutUs" onclick="about()" class="nav-link">About Us</a>
+        </li>
+        <li class="nav-item">
+            <a href="#Gallery" onclick="gallery()" class="nav-link">Gallery</a>
+        </li>
+        <li class="nav-item">
+            <a href="#FAQs" onclick="FAQs()" class="nav-link">FAQs</a>
+        </li>
+        <li class="nav-item">
+            <a href="#Contact" onclick="contact()" class="nav-link">Contact</a>
+        </li>
+    </ul>
+
+    <div class="container" id="Home" style="display: block;">
+        <h1 class="display-1">Home Page</h1>
+        <p>This is Home Page</p>
+    </div>
+    <div class="container" id="About" style="display: none;">
+        <h1 class="display-1">About Page</h1>
+        <p>This is About Page</p>
+    </div>
+    <div class="container" id="Gallery" style="display: none;">
+        <h1 class="display-1">Gallery Page</h1>
+        <p>This is Gallery Page</p>
+    </div>
+    <div class="container" id="FAQs" style="display: none;">
+        <h1 class="display-1">FAQs Page</h1>
+        <p>This is FAQs Page</p>
+    </div>
+    <div class="container" id="Contact" style="display: none;">
+        <h1 class="display-1">Contact Page</h1>
+        <p>This is Contact Page</p>
+    </div>
+
+    <script>
+        home = () => {
+            $("#Home").css("display", "block");
+            $("#About").css("display", "none");
+            $("#Gallery").css("display", "none");
+            $("#FAQs").css("display", "none");
+            $("#Contact").css("display", "none");
+        }
+        about = () => {
+            $("#Home").css("display", "none");
+            $("#About").css("display", "block");
+            $("#Gallery").css("display", "none");
+            $("#FAQs").css("display", "none");
+            $("#Contact").css("display", "none");
+        }
+        gallery = () => {
+            $("#Home").css("display", "none");
+            $("#About").css("display", "none");
+            $("#Gallery").css("display", "block");
+            $("#FAQs").css("display", "none");
+            $("#Contact").css("display", "none");
+        }
+        FAQs = () => {
+            $("#Home").css("display", "none");
+            $("#About").css("display", "none");
+            $("#Gallery").css("display", "none");
+            $("#FAQs").css("display", "block");
+            $("#Contact").css("display", "none");
+        }
+        contact = () => {
+            $("#Home").css("display", "none");
+            $("#About").css("display", "none");
+            $("#Gallery").css("display", "none");
+            $("#FAQs").css("display", "none");
+            $("#Contact").css("display", "block");
+        }
+    </script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+
+</html>
